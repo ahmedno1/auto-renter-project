@@ -14,14 +14,17 @@
           <input type="email" name="email" id="email" placeholder="email@example.com">
           <h2 class="login-h">Password</h2>
           <input type="password" name="password" id="password" placeholder="Password">
-          <br>
-          <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
-          <label for="checkbox">Remember me</label>
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Remember me</label>
+          </div>
           <button type="submit" class="login-btn">Log in</button>
         </form>
         <br>
-        <h4 class="login-h">Don't have an account?</h4>
-        <a href="{{ route('authRegister') }}">Sign up</a>
+        <div class="register-div">
+          <h4>Don't have an account?</h4>
+          <a href="{{ route('authRegister') }}">Sign up</a>
+        </div>
     </div>
 
 </body>
