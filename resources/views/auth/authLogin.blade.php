@@ -11,16 +11,17 @@
     <div class="screen">
         <form action="{{ route('login') }}">
           <h2 class="login-h">Email address</h2>
-          <input type="email" name="email" id="email" placeholder="email@example.com" class="login-txt">
+          <input type="email" name="email" id="email" placeholder="email@example.com">
           <h2 class="login-h">Password</h2>
-          <input type="password" name="password" id="password" placeholder="Password" class="login-txt">
+          <input type="password" name="password" id="password" placeholder="Password">
           <br>
           <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
           <label for="checkbox">Remember me</label>
           <button type="submit" class="login-btn">Log in</button>
         </form>
+        <br>
         <h4 class="login-h">Don't have an account?</h4>
-        <a href="{{ route('register') }}">Sign up</a>
+        <a href="{{ route('authRegister') }}">Sign up</a>
     </div>
 
 </body>

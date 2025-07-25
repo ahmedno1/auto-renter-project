@@ -9,10 +9,14 @@
 </head>
 <body>
     <div class="screen">
-          <h2 class="auth-h">You have account?</h2>
-          <div class="auth-btn"><a href="{{ route('authLogin') }}">Log in</a></div>
-          <h2 class="auth-h">No?</h2>
-          <div class="auth-btn"><a href="{{ route('register') }}">Register</a></div>
+      <form action="{{ route('authLogin') }}">
+          <h2>You have account?</h2>
+          <button type="submit">Log in</button>
+      </form>
+      <form action="{{ route('authRegister') }}">
+          <h2>No?</h2>
+          <button type="submit">Sign up</button>
+      </form>
     </div>
 
 </body>

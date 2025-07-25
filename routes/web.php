@@ -22,10 +22,14 @@ Route::middleware(['auth'])->group(function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('/authen', function () {
-    return view('auth.authen');
-})->name('authentication');
+Route::get('/wellcome', function () {
+    return view('auth.wellcome');
+})->name('wellcome');
 
 Route::get('/authLogin', function () {
     return view('auth.authLogin');
 })->name('authLogin');
+
+Route::get('/authRegister', function () {
+    return view('auth.authRegister');
+})->name('authRegister');
